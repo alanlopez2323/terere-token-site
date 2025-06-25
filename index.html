@@ -7,6 +7,7 @@
     <meta name="keywords" content="tereré, Paraguay, cripto, token, blockchain, cultura, yerba mate" />
     <meta name="author" content="Alan López" />
     <link rel="icon" href="logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <style>
       body {
         background: linear-gradient(to bottom, #b0b0b0, #d6f5d6);
@@ -20,15 +21,19 @@
       h1, h2 {
         color: #0a4d2f;
       }
-      img {
+      img.logo {
         margin-top: 2em;
         width: 120px;
+        transition: transform 0.5s ease;
+      }
+      img.logo:hover {
+        transform: scale(1.1);
       }
       section {
         max-width: 700px;
         margin: 2em auto;
         text-align: left;
-        background: rgba(255, 255, 255, 0.9);
+        background: rgba(255, 255, 255, 0.95);
         border-radius: 12px;
         padding: 1.5em;
         box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -51,23 +56,38 @@
       a.btn:hover {
         background: #009966;
       }
+      .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content: center;
+        margin-top: 1.5em;
+      }
+      .galeria div {
+        text-align: center;
+      }
+      .galeria img {
+        width: 140px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      }
     </style>
   </head>
   <body>
-    <img src="logo.png" alt="Logo Tereré Token" />
-    <h1>Así como el tereré se comparte, este token también</h1>
+    <img src="logo.png" alt="Logo Tereré Token" class="logo" />
+    <h1>🧉 Así como el tereré se comparte, este token también</h1>
     <p>Una cripto con identidad. Un símbolo de comunidad, tradición y nueva economía.</p>
 
     <section>
-      <h2>¿Por qué nació Tereré Token?</h2>
+      <h2>📜 ¿Por qué nació Tereré Token?</h2>
       <p>En Paraguay, el tereré es más que una bebida: es una ceremonia de encuentro, una ronda de historias. Tereré Token nació con esa misma esencia: compartir valor, identidad y comunidad desde nuestras raíces guaraníes hacia el mundo digital.</p>
 
-      <h2>Desarrollo y visión</h2>
+      <h2>🌱 Desarrollo y visión</h2>
       <p>Este token fue creado de forma independiente, con dedicación y orgullo, como una herramienta de inclusión y difusión cultural. Nuestro objetivo es unir tecnología y tradición, creando un puente entre el blockchain y el alma paraguaya. No solo buscamos inversión, buscamos conexión.</p>
     </section>
 
     <section>
-      <h2>¿Cómo agregar Tereré Token a tu wallet?</h2>
+      <h2>🔐 ¿Cómo agregar Tereré Token a tu wallet?</h2>
       <p>Si usás MetaMask u otra wallet compatible con Ethereum, podés importar Tereré Token fácilmente en la red Sepolia. Solo hacé clic en el siguiente botón:</p>
 
       <a class="btn" href="https://metamask.app.link/dapp/tokenfactory.surge.sh/#/import?network=sepolia&contract=0x36f09E85a6C94c647566D63b4d8181fdAf516Ec1"
@@ -76,6 +96,25 @@
       </a>
 
       <p><small>Requiere tener MetaMask instalada y seleccionada la red Sepolia.</small></p>
+    </section>
+
+    <section>
+      <h2>🖼️ Galería Cultural</h2>
+      <p>Un recorrido visual de la esencia del Paraguay y el espíritu del tereré.</p>
+      <div class="galeria">
+        <div>
+          <img src="galeria1.jpg" alt="Guampa clásica" />
+          <p>Guampa tradicional</p>
+        </div>
+        <div>
+          <img src="galeria2.jpg" alt="Yerba mate" />
+          <p>Yerba Paraguayita</p>
+        </div>
+        <div>
+          <img src="galeria3.jpg" alt="Ñandutí" />
+          <p>Ñandutí en flor</p>
+        </div>
+      </div>
     </section>
 
     <footer>
