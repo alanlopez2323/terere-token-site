@@ -9,15 +9,16 @@
     <link rel="icon" href="logo.png" />
     <style>
       body {
-        background: #b0b0b0;
+        background: linear-gradient(to bottom, #b0b0b0, #d6f5d6);
         font-family: sans-serif;
         color: #1a1a1a;
         text-align: center;
         padding: 3em;
         line-height: 1.6;
+        margin: 0;
       }
       h1, h2 {
-        color: #1a1a1a;
+        color: #0a4d2f;
       }
       img {
         margin-top: 2em;
@@ -27,6 +28,10 @@
         max-width: 700px;
         margin: 2em auto;
         text-align: left;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 12px;
+        padding: 1.5em;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       }
       footer {
         margin-top: 4em;
@@ -41,6 +46,10 @@
         text-decoration: none;
         border-radius: 6px;
         margin-top: 1em;
+        transition: background 0.3s ease;
+      }
+      a.btn:hover {
+        background: #009966;
       }
     </style>
   </head>
@@ -61,7 +70,7 @@
       <h2>¿Cómo agregar Tereré Token a tu wallet?</h2>
       <p>Si usás MetaMask u otra wallet compatible con Ethereum, podés importar Tereré Token fácilmente en la red Sepolia. Solo hacé clic en el siguiente botón:</p>
 
-      <a class="btn" href="https://metamask.app.link/dapp/tokenfactory.surge.sh/#/import?network=sepolia&contract=0xTU_CONTRATO"
+      <a class="btn" href="https://metamask.app.link/dapp/tokenfactory.surge.sh/#/import?network=sepolia&contract=0x36f09E85a6C94c647566D63b4d8181fdAf516Ec1"
          target="_blank">
         Agregar Tereré Token a MetaMask
       </a>
